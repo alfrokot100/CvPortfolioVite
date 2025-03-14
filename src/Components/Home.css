@@ -1,0 +1,88 @@
+.home
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: black; /* Bakgrundsfärg */
+    min-height: 100vh; /* Täcker hela sidans höjd */
+    width: 100%; /* Täcker hela sidans bredd */
+    color: white;
+    padding: 80px 0 0; /* 80px padding-top för att undvika överlappning med headern */
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 15rem; /* Justera detta värde baserat på headerns höjd */
+
+
+}
+
+
+.home .home-content h1
+{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 0.5;
+}
+span{color: #b74b4b;}
+.home-content h3
+{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+.home-image
+{border-radius: 50%;}
+.home-image img
+{
+    border-radius: 50%;
+    width: 50vw;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.4);
+    max-width: 500px;
+    margin-bottom: 5rem;
+
+}
+.typing-text
+{
+    font-size: 30px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.typing-text span
+{
+    position: relative;
+}
+.typing-text span::before
+{
+    content: " .NET Utvecklare";
+    color: #b74b4b;
+}
+
+@media(max-width: 1000px)
+{
+    .home
+    {
+        gap: 4rem;
+    }
+}
+@media(max-width: 995px)
+{
+    .home
+    {
+        flex-direction: column;
+        margin: 4rem 5rem;
+    }
+    .home .home-content h3
+    {
+        font-size: 2.5rem;
+    }
+    .home .home-content h1
+    {
+        font-size: 5rem;
+    }
+    .home-image img
+    {
+        width: 70vh;
+        margin-top: 4rem;
+    }
+}
